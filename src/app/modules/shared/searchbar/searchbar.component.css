@@ -1,0 +1,8 @@
+input {
+  background-color: rgba(0,0,0,0.5);
+  border: 1pt solid;
+  padding: 2pt;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-radius: 5pt;
+}

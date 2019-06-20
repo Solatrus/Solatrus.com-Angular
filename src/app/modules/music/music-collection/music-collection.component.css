@@ -1,0 +1,9 @@
+.music-collection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.centered {
+  text-align: center;
+}

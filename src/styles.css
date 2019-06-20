@@ -1,0 +1,12 @@
+/* Add application styles & imports to this file! */
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  
+  overflow: hidden;
+}

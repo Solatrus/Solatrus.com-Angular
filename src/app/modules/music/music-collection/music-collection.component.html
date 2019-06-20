@@ -1,0 +1,6 @@
+<div class="centered"><shared-searchbar></shared-searchbar></div>
+<div class="music-collection">
+  <ng-container *ngFor="let item of collection">
+    <music-item [@fadeInOut] [item]="item"></music-item>
+  </ng-container>
+</div>

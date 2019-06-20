@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+
+.music-item {
+  --dimension: 200pt;
+  height: var(--dimension);
+  width: var(--dimension);
+  background-color: #8a2be2;
+  border-radius: 20pt;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  margin: 5pt;
+  line-height: var(--dimension);
+  text-decoration: none;
+  transition: background-color 200ms ease-out;
+}
+
+.music-item:hover {
+  background-color: #a663e4;
+}
