@@ -12,7 +12,6 @@ import { MusicModule } from './modules/music/music.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/core/home/home.component';
-
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
 ]

@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SearchbarComponent } from './searchbar/searchbar.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { TrackLengthPipe } from './pipes/track-length.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [SearchbarComponent],
-  exports: [SearchbarComponent]
+  declarations: [SearchbarComponent,TrackLengthPipe],
+  exports: [SearchbarComponent,TrackLengthPipe]
 })
 export class SharedModule { }

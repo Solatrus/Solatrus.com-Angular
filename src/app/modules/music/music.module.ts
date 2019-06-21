@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 
-import { MusicService } from '../../services/music.service';
+import { MusicService } from '../shared/services/music.service';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -26,7 +26,7 @@ const musicRoutes = [
     RouterModule.forChild(musicRoutes),
     MarkdownModule.forChild(),
     CommonModule,
-    SharedModule
+    SharedModule,
   ],
   declarations: [
     MusicCollectionComponent,
@@ -36,6 +36,7 @@ const musicRoutes = [
   exports: [
     RouterModule
   ],
+  // Normally it's best to use @Injectable, but we need to inject an interface.
   providers: [ { provide: 'ISearchableService', useClass: MusicService } ]
 })
 export class MusicModule { }

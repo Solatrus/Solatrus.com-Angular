@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MusicService } from '../../../services/music.service';
-import { MusicItem } from '../../../services/models/music-item';
+import { MusicService } from '../../shared/services/music.service';
+import { MusicItem } from '../../shared/services/models/music-item';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

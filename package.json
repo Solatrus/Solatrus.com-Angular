@@ -13,6 +13,7 @@
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "^8.0.0",
     "core-js": "2",
+    "linq-to-typescript": "^3.1.1",
     "ngx-markdown": "^8.0.2",
     "rxjs": "^6.5.2",
     "sass": "^1.21.0",
