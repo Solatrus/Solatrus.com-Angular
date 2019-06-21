@@ -4,5 +4,11 @@ input {
   padding: 2pt;
   color: whitesmoke;
   border-color: whitesmoke;
+  transition: border-color 200ms ease-out;
   border-radius: 5pt;
+  outline: none;
+}
+
+input:focus {
+  border-color: blueviolet;
 }

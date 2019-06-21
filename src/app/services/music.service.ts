@@ -17,6 +17,11 @@ export class MusicService implements ISearchableService {
       "searchableText":"ABCXYZ",
       "key": "abcxyz",
       "markdownText": "# Hello 1",
+      "details": [{
+        "name": "Song 1",
+        "timeSpanInSeconds": 65
+      }
+      ]
       }));
     collection.push(new MusicItem({
       "searchableText":"XYZ",

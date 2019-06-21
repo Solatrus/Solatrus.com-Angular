@@ -3,20 +3,39 @@ a {
 }
 
 .music-item {
-  --dimension: 200pt;
+  --border-radius: 20px;
+  --dimension: 200px;
   height: var(--dimension);
   width: var(--dimension);
-  background-color: #8a2be2;
-  border-radius: 20pt;
   color: #FFF;
-  font-weight: bold;
-  text-align: center;
-  margin: 5pt;
-  line-height: var(--dimension);
+  margin: 5px;
   text-decoration: none;
-  transition: background-color 200ms ease-out;
+  position: relative;
 }
 
-.music-item:hover {
-  background-color: #a663e4;
+.music-item .text:hover {
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.music-item .text {
+    transition: background-color 200ms ease-out;
+    position: absolute;
+    height: var(--dimension);
+    width: var(--dimension);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    line-height: var(--dimension);
+    border-radius: var(--border-radius);
+}
+
+.music-item img {
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

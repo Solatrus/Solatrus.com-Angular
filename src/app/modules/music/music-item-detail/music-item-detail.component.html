@@ -5,4 +5,9 @@
   <markdown>
     {{ item.markdownText }}
   </markdown>
+  <ol>
+    <ng-container *ngFor="let detail of item.details">
+      <li>{{ detail.name }} - {{ detail.timeSpanInSeconds | number:'2.0-0' }}</li>
+    </ng-container>
+  </ol>
 </div>
