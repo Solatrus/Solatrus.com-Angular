@@ -1,23 +1,20 @@
 import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
 
 import { ISearchableService } from '../../../shared/interfaces/i-searchable';
-import { MusicService } from '../../services/music.service';
+import { DataService } from '../../services/data.service';
 import { MusicItem } from '../../models/music-item';
 import { Observable, Subscription } from 'rxjs';
-
-import { fadeInOut } from '../../../../animations';
 
 @Component({
   selector: 'music-collection',
   templateUrl: './music-collection.component.html',
   styleUrls: ['./music-collection.component.css'],
-  animations: [fadeInOut]
 })
 export class MusicCollectionComponent implements OnInit {
   collection: MusicItem[];
   observableCollection$: Observable<MusicItem[]>;
 
-  constructor(@Inject('ISearchableService') private service: MusicService) { 
+  constructor(@Inject('ISearchableService') private service: DataService) { 
     this.collection = [];
     this.observableCollection$ = this.service.subscribeToFilter();
   }

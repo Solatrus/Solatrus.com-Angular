@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MusicService } from '../../services/music.service';
+import { DataService } from '../../services/data.service';
 import { MusicItem } from '../../models/music-item';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MusicItemDetailComponent implements OnInit {
   private item: MusicItem;
-  constructor(@Inject('ISearchableService') private service: MusicService, private route: ActivatedRoute) { 
+  constructor(@Inject('ISearchableService') private service: DataService, private route: ActivatedRoute) { 
   }
 
   ngOnInit() {

@@ -51,13 +51,70 @@ export const slideAnimations = trigger('slideAnimation', [
     ])
 ]);
 
-export const fadeInOut = trigger('fadeInOut', [
-      transition(':enter', [
-        style({opacity: 0, transform: 'translateY(-100%)'}),
-        animate('0.3s ease-in', style({'opacity': '1', transform: 'translateY(0%)'}))
-      ]) ,
-      transition(':leave', [
-        style({opacity: 1, transform: 'translateY(0%)'}),
-        animate('0.3s ease-out', style({'opacity': '0', transform: 'translateY(-100%)'}))
+const insertedFlex = 1;
+const removedFlex = 0.00000001;
+const insertedOpacity = 1;
+const removedOpacity = 0;
+const removedTransform = 'translateX(100%)';
+const insertedTransform = 'none';
+const insertedWidth = 'auto';
+const removedWidth = 0;
+
+export const flexItemLeaveEnter = trigger('flexItemLeaveEnter', [
+      transition('moving => void', [
+        style({
+          opacity: removedOpacity,
+          //transform: removedTransform,
+          flex: removedFlex,
+          width: removedWidth,
+        }),
+        animate('0.3s ease-in', style({
+          opacity: insertedOpacity,
+          //transform: insertedTransform,
+          flex: insertedFlex,
+          width: insertedWidth,
+        }))
+      ]),
+      transition('moving => stopped', [
+        style({
+          opacity: insertedOpacity,
+          //transform: insertedTransform, 
+          flex: insertedFlex,
+          width: insertedWidth,
+        }),
+        animate('0.3s ease-out', style({
+          opacity: removedOpacity, 
+          //transform: removedTransform,
+          flex: removedFlex,
+          width: removedWidth,
+        }))
+      ]),
+      transition('stopped => moving', [
+        style({
+          opacity: insertedOpacity,
+          //transform: insertedTransform, 
+          flex: insertedFlex,
+          width: insertedWidth,
+        }),
+        animate('0.3s ease-out', style({
+          opacity: removedOpacity, 
+          //transform: removedTransform,
+          flex: removedFlex,
+          width: removedWidth,
+        }))
+      ]),
+      transition('void => moving', [
+        style({
+          opacity: insertedOpacity,
+          //transform: insertedTransform, 
+          flex: insertedFlex,
+          width: insertedWidth,
+        }),
+        animate('0.3s ease-out', style({
+          opacity: removedOpacity, 
+          //transform: removedTransform,
+          flex: removedFlex,
+          width: removedWidth,
+        }))
       ])
     ]);

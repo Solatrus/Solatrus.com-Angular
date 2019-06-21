@@ -1,6 +1,8 @@
-<a routerLink="/music/{{item.key}}">
-<div class="music-item">
-  <div class="text">{{ item.name }}</div>
-  <img class="image" src="https://picsum.photos/200?blur=1&random={{item.key}}">
+<div #container [@flexItemLeaveEnter]="getFlexItemState()">
+  <a routerLink="/music/{{item.key}}">
+    <div class="music-item">
+      <div class="text">{{ item.name }}</div>
+      <img class="image" src="https://picsum.photos/200?blur=1&random={{item.key}}">
+    </div>
+  </a>
 </div>
-</a>

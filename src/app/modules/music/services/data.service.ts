@@ -5,7 +5,7 @@ import { isNullOrWhitespace } from '../../../helpers';
 import { ISearchableService, ISearchableItem } from '../../shared/interfaces/i-searchable';
 
 @Injectable()
-export class MusicService implements ISearchableService {
+export class DataService implements ISearchableService {
   private searchText: string;
 
   private collection: MusicItem[];
