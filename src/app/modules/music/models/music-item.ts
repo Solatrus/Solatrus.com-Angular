@@ -1,4 +1,4 @@
-import { ISearchableItem } from '../../interfaces/i-can-search';
+import { ISearchableItem } from '../../shared/interfaces/i-can-search';
 export class MusicItem implements ISearchableItem {
   key: string;
   searchableText: string;

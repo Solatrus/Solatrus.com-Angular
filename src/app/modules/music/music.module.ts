@@ -7,9 +7,9 @@ import { MusicService } from '../shared/services/music.service';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { MusicCollectionComponent } from './music-collection/music-collection.component';
-import { MusicItemComponent } from './music-item/music-item.component';
-import { MusicItemDetailComponent } from './music-item-detail/music-item-detail.component';
+import { MusicCollectionComponent } from './components/music-collection/music-collection.component';
+import { MusicItemComponent } from './components/music-item/music-item.component';
+import { MusicItemDetailComponent } from './components/music-item-detail/music-item-detail.component';
 
 const musicRoutes = [
     {

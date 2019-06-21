@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { MusicItem } from './models/music-item';
-import { MusicModule } from '../modules/music/music.module';
-import { isNullOrWhitespace } from '../helpers';
-import { ISearchableService, ISearchableItem } from '../interfaces/i-searchable';
+import { MusicItem } from '../models/music-item';
+import { isNullOrWhitespace } from '../../../helpers';
+import { ISearchableService, ISearchableItem } from '../../shared/interfaces/i-searchable';
 
 @Injectable()
 export class MusicService implements ISearchableService {

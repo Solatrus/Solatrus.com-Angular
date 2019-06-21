@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
 
-import { ISearchableService } from '../../../interfaces/i-searchable';
-import { MusicService } from '../../../services/music.service';
-import { MusicItem } from '../../../services/models/music-item';
+import { ISearchableService } from '../../../../interfaces/i-searchable';
+import { MusicService } from '../../../shared/music.service';
+import { MusicItem } from '../../../shared/models/music-item';
 import { Observable, Subscription } from 'rxjs';
 
-import { fadeInOut } from '../../../animations';
+import { fadeInOut } from '../../../../animations';
 
 @Component({
   selector: 'music-collection',
