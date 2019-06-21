@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { MusicItem } from '../../../services/models/music-item';
+import { MusicItem } from '../../models/music-item';
 
 @Component({
   selector: 'music-item',

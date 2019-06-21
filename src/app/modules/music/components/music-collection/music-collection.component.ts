@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
 
-import { ISearchableService } from '../../../../interfaces/i-searchable';
-import { MusicService } from '../../../shared/music.service';
-import { MusicItem } from '../../../shared/models/music-item';
+import { ISearchableService } from '../../../shared/interfaces/i-searchable';
+import { MusicService } from '../../services/music.service';
+import { MusicItem } from '../../models/music-item';
 import { Observable, Subscription } from 'rxjs';
 
 import { fadeInOut } from '../../../../animations';

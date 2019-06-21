@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
-
-import { MusicService } from '../shared/services/music.service';
-
 import { SharedModule } from '../shared/shared.module';
+
+import { MusicService } from './services/music.service';
 
 import { MusicCollectionComponent } from './components/music-collection/music-collection.component';
 import { MusicItemComponent } from './components/music-item/music-item.component';

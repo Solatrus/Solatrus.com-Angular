@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
-import { ISearchableService } from '../../../interfaces/i-searchable';
+import { ISearchableService } from '../../interfaces/i-searchable';
 
 @Component({
   selector: 'shared-searchbar',
