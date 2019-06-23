@@ -13,7 +13,7 @@ import { flexItemLeaveEnter } from '../../../../animations';
 export class MusicItemComponent implements OnInit {
   @Input() item: MusicItem;
   @ViewChild('container', {static:false}) container: ElementRef;
-  constructor(private rd: Renderer2) { }
+  constructor() { }
 
   ngOnInit() {
   }
